@@ -20,10 +20,10 @@ if(!empty($_POST['acc']) && !empty($_POST['pw'])){
       if($chk['pw']==$pw){
           header("location:mem.php");
       }else{
-          header("location:error.php");
+          header("location:error.php"); /* 密碼錯誤 */
       }
   }else{
-      header("location:error.php");
+      header("location:error.php"); /* 帳號錯誤 */
   }
 
 }else{
